@@ -22,7 +22,7 @@ fn get_contest_standings(contestId: &str, handles: Vec<String>) -> Result<Vec<St
 
 fn main() {
     let handles = vec!["A".to_string(), "B".to_string()];
-    match getValteraDraugi() {
+    match get_valtera_draugi() {
         Ok(res) => {
             println!("draugi: {:?}", res);
         }

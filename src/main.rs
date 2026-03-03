@@ -1,7 +1,7 @@
 use std::fs::File;
 use std::io::Read;
 
-fn getValteraDraugi() -> Result<Vec<String>,String> {
+fn get_valtera_draugi() -> Result<Vec<String>,String> {
     let mut file = match File::open("friends.txt") {
         Ok(f) => f,
         Err(e) => return Err(format!("Nevareja atvert draugu sarakstu: {}", e)),
@@ -14,10 +14,10 @@ fn getValteraDraugi() -> Result<Vec<String>,String> {
     Ok(draugi)
 }
 
-fn getContestStandings(contestId: &str, handles: Vec<String>) -> Result<Vec<String>,String> {
-    let happyUsers: Vec<String> = Vec::new();
+fn get_contest_standings(contestId: &str, handles: Vec<String>) -> Result<Vec<String>,String> {
+    let happy_users: Vec<String> = Vec::new();
 
-    Ok(happyUsers)
+    Ok(happy_users)
 }
 
 fn main() {
